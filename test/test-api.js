@@ -24,17 +24,17 @@ describe('Pig Latin API', function () {
 
   describe('/convert endpoint', function () {
 
-    it('responds with JSON and a 400', function (done) {
+    it('responds with a 400', function (done) {
       request(app)
         .get('/convert')
         .expect(400, done);
     });
 
-  })
+  });
 
   describe('/convert/:word endpoint', function () {
 
-    it('responds with JSON and a 200, and a pig latin word', function (done) {
+    it('responds with a 200, and a pig latin word', function (done) {
       request(app)
         .get('/convert/banana')
         .expect('Content-Type', /plain/)
@@ -42,7 +42,7 @@ describe('Pig Latin API', function () {
         .expect(200, done);
     });
 
-    it('responds with JSON and a 400 if an invalid word is sent', function (done) {
+    it('responds with a 400 if an invalid word is sent', function (done) {
       request(app)
         .get('/convert/banana123')
         .expect(400, done);
