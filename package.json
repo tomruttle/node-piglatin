@@ -1,0 +1,28 @@
+{
+  "name": "piglatin",
+  "version": "1.0.0",
+  "description": "A simple service that returns the Pig Latin for given words",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tomruttle/node-piglatin.git"
+  },
+  "author": "Tom Ruttle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomruttle/node-piglatin/issues"
+  },
+  "homepage": "https://github.com/tomruttle/node-piglatin",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-nodemon": "^1.0.5",
+    "jshint-summary": "^0.4.0",
+    "restify": "^2.8.5"
+  }
+}
