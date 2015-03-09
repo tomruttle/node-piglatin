@@ -1,5 +1,5 @@
 FROM node:0.12
-MAINTAINER Tom Ruttle <thruttle@gmail.com>
+MAINTAINER Tom Ruttle <tom@tomruttle.com>
 
 RUN echo "prefix=/usr" > /root/.npmrc
 RUN npm install -g mocha gulp
