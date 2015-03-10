@@ -26,6 +26,6 @@
     "restify": "^2.8.5",
     "should": "^5.1.0",
     "supertest": "^0.15.0",
-    "yapiglatin": "^1.0.1"
+    "yapiglatin": "^1.0.2"
   }
 }
