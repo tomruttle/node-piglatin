@@ -10,14 +10,14 @@ var should = require('should');
 describe('Pig Latin', function () {
 
   it('should not fail when incorrect values are sent', function (done) {
-    pigLatin('').should.eql(false);
-    pigLatin(123).should.eql(false);
-    pigLatin(false).should.eql(false);
-    pigLatin(true).should.eql(false);
-    pigLatin('123').should.eql(false);
-    pigLatin('test123').should.eql(false);
-    pigLatin({}).should.eql(false);
-    pigLatin({fail: '123'}).should.eql(false);
+    pigLatin('').should.eql('');
+    pigLatin(123).should.eql('');
+    pigLatin(false).should.eql('');
+    pigLatin(true).should.eql('');
+    pigLatin('123').should.eql('123');
+    pigLatin('test123').should.eql('test123');
+    pigLatin({}).should.eql('');
+    pigLatin({fail: '123'}).should.eql('');
     return done();
   });
 
@@ -46,5 +46,10 @@ describe('Pig Latin', function () {
     pigLatin('the').should.eql('ethay');
     return done();
   });
+
+  it('converts sentences', function (done) {
+    pigLatin('Hello World').should.eql('ellohay orldway');
+    return done();
+  })
 
 });

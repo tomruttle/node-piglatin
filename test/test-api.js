@@ -42,10 +42,12 @@ describe('Pig Latin API', function () {
         .expect(200, done);
     });
 
-    it('responds with a 400 if an invalid word is sent', function (done) {
+    it('responds with the same word if an invalid word is sent', function (done) {
       request(app)
         .get('/convert/banana123')
-        .expect(400, done);
+        .expect('Content-Type', /plain/)
+        .expect('banana123')
+        .expect(200, done);
     });
 
   });
