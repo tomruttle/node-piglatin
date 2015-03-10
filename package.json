@@ -1,5 +1,5 @@
 {
-  "name": "piglatin",
+  "name": "piglatin-api",
   "version": "1.0.0",
   "description": "A simple service that returns the Pig Latin for given words",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomruttle/node-piglatin.git"
+    "url": "git@github.com:tomruttle/piglatin-api.git"
   },
   "author": "Tom Ruttle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tomruttle/node-piglatin/issues"
+    "url": "https://github.com/tomruttle/piglatin-api/issues"
   },
-  "homepage": "https://github.com/tomruttle/node-piglatin",
+  "homepage": "https://github.com/tomruttle/piglatin-api",
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.9.2",
@@ -25,6 +25,7 @@
     "jshint-summary": "^0.4.0",
     "restify": "^2.8.5",
     "should": "^5.1.0",
-    "supertest": "^0.15.0"
+    "supertest": "^0.15.0",
+    "yapiglatin": "^1.0.1"
   }
 }

@@ -2,7 +2,7 @@
 
 var restify = require('restify');
 
-var pigLatin = require('./lib/piglatin');
+var pigLatin = require('yapiglatin').changePhrase;
 
 var server = restify.createServer();
 
