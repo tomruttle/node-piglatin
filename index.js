@@ -6,6 +6,9 @@ var pigLatin = require('yapiglatin').changePhrase;
 
 var server = restify.createServer();
 
+server.use(restify.CORS());
+server.use(restify.fullResponse());
+
 server.get('/health', function (req, res, next) {
   res.setHeader('content-type', 'text/plain');
   res.send(200, 'OK');
